@@ -1,10 +1,10 @@
-# 🧠 Resume Extractor
+# Resume Extractor
 
 A simple and efficient **Python CLI tool** that extracts key information from resumes using **Natural Language Processing (NLP)** with **spaCy**.
 
 ---
 
-## ⚙️ How to Use It
+## How to Use It
 
 Getting this up and running is straightforward.
 
@@ -28,7 +28,7 @@ Copy code
 # Or on Windows
 .\venv\Scripts\activate
 ```
-###**2️. Install Dependencies**
+### **2️. Install Dependencies**
 All required libraries are listed in requirements.txt. Install them with:
 
 ```bash
@@ -36,7 +36,7 @@ Copy code
 pip install -r requirements.txt
 ```
 
-###**3️. Download the spaCy Language Model**
+### **3️. Download the spaCy Language Model**
 The script relies on spaCy’s pre-trained English language model. Download it by running:
 
 ```bash
@@ -44,7 +44,7 @@ Copy code
 python -m spacy download en_core_web_sm
 ```
 
-##**4️. Run the Script**
+### **4️. Run the Script**
 Once everything is installed, just run the main file:
 
 ```bash
@@ -60,7 +60,7 @@ Paste resume text — Paste your text directly into the terminal.
 
 Exit — Quit the program.
 
-##**Tech Stack**
+## **Tech Stack**
 Python 3.8+
 
 PyPDF2 – For PDF text extraction

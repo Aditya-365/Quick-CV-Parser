@@ -1,48 +1,27 @@
-# **Quick-CV-Parser**
+Resume Extractor
 
-### **AI-Powered Resume Keyword Extractor**
+A simple and efficient Python CLI tool that extracts key information from resumes using Natural Language Processing (NLP) with spaCy.
 
-Hey there! Thanks for checking out my **Resume Keyword Extractor** project.
+This project allows users to upload or paste resume text and automatically identifies details like names, emails, phone numbers, skills, and more — all through a clean command-line interface.
 
-I built this little command-line tool because I wanted a fast and simple way to scan a resume (either a PDF or plain text) and instantly see the most important and frequently mentioned terms.  
+Features
 
-Whether you're a **recruiter** trying to get a quick snapshot of a candidate or a **job-seeker** wanting to see what keywords stand out in your own resume, I'm hoping this tool can help you out.
+Extracts structured information (name, contact info, skills, etc.) from unstructured resumes
 
----
+Works with both PDF files and plain text input
 
-## **What It Does**
+Built with spaCy NLP for entity recognition
 
-This script is a simple, interactive tool that runs right in your terminal. Here's a quick breakdown of what's happening under the hood:
+Lightweight, fast, and easy to use
 
-- **Two Ways to Input**  
-  You can either provide a direct file path to a **PDF resume** or simply copy and paste the **full text** of a resume directly into the terminal.
-
-- **PDF Text Extraction**  
-  If you provide a PDF, it uses the **PyPDF2** library to read the file and extract all the text from its pages.
-
-- **NLP Magic (with spaCy)**  
-  Once it has the text, the script feeds it into the **spaCy** natural language processing (NLP) library.
-
-- **Keyword & Entity Analysis**  
-  The script is configured to:  
-  - Identify important Named Entities like **Organizations (ORG)**, **Products (PRODUCT)**, and **Locations (GPE)**.  
-  - Pull out key **Nouns** and **Proper Nouns** (like *“Python,” “Engineering,” or “Management”*).  
-  - Filter out common, non-important **stop words** (like *‘the’, ‘is’, ‘a’, ‘and’*) to keep results clean.
-
-- **Top 10 List**  
-  It counts the frequency of all these extracted keywords and entities, then presents a clean **Top 10** list showing which terms appeared most often.
-
----
-
-## **How to Use It**
+⚙️ How to Use It
 
 Getting this up and running is pretty straightforward.
 
-### **1️. Set Up Your Environment**
+1️. Set Up Your Environment
 
-I recommend using a **Python virtual environment (venv)** to keep dependencies tidy.
+It’s best to use a Python virtual environment (venv) to keep dependencies tidy.
 
-```bash
 # Create a virtual environment
 python -m venv venv
 
@@ -50,45 +29,42 @@ python -m venv venv
 source venv/bin/activate
 
 # Or on Windows
-.\venv\Scripts\activate```
+.\venv\Scripts\activate
 
-###**2. Install Dependencies**
+2️. Install Dependencies
 
-I've included a requirements.txt file to make installation easy. Just run:
+All required libraries are listed in requirements.txt. Install them with:
 
-```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
 
-###**3. Download the spaCy Language Model**
+3️. Download the spaCy Language Model
 
-The script relies on spaCy’s pre-trained English language model. Download it by running:
-```bash
-python -m spacy download en_core_web_sm```
+The project relies on spaCy’s pre-trained English model. Download it by running:
 
-###**4. Run the Script!**
+python -m spacy download en_core_web_sm
 
-Once everything is installed, just run the main file:
+4️. Run the Script!
 
-```bash
-python resume_extractor.py```
+Once everything is set up, just run the main file:
 
-From there, the script will greet you and give you three choices:
+python resume_extractor.py
 
-Upload a PDF resume — Enter the file path to your PDF.
+
+You’ll be greeted with a menu offering three options:
+
+Upload a PDF resume — Enter the path to your PDF file.
 
 Paste resume text — Paste your text directly into the terminal.
-(When done, type END on a new, empty line and press Enter.)
+(When finished, type END on a new line and press Enter.)
 
 Exit — Quit the program.
 
-##**Tech Stack**
 Tech Stack
 
 Python 3.8+
 
-PyPDF2 – For PDF text extraction
+PyPDF2 – PDF text extraction
 
-spaCy – For NLP-based keyword and entity recognition
+spaCy – NLP-based keyword and entity recognition
 
-Command-line Interface (CLI)
-
+CLI-based interaction

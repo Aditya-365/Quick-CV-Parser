@@ -23,6 +23,7 @@ bash
 Copy code
 # Or on Windows
 .\venv\Scripts\activate
+```
 2️. Install Dependencies
 All required libraries are listed in requirements.txt. Install them with:
 

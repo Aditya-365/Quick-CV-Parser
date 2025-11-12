@@ -50,4 +50,45 @@ python -m venv venv
 source venv/bin/activate
 
 # Or on Windows
-.\venv\Scripts\activate
+.\venv\Scripts\activate```
+
+###**2. Install Dependencies**
+
+I've included a requirements.txt file to make installation easy. Just run:
+
+```bash
+pip install -r requirements.txt```
+
+###**3. Download the spaCy Language Model**
+
+The script relies on spaCy’s pre-trained English language model. Download it by running:
+```bash
+python -m spacy download en_core_web_sm```
+
+###**4. Run the Script!**
+
+Once everything is installed, just run the main file:
+
+```bash
+python resume_extractor.py```
+
+From there, the script will greet you and give you three choices:
+
+Upload a PDF resume — Enter the file path to your PDF.
+
+Paste resume text — Paste your text directly into the terminal.
+(When done, type END on a new, empty line and press Enter.)
+
+Exit — Quit the program.
+
+##**Tech Stack**
+Tech Stack
+
+Python 3.8+
+
+PyPDF2 – For PDF text extraction
+
+spaCy – For NLP-based keyword and entity recognition
+
+Command-line Interface (CLI)
+

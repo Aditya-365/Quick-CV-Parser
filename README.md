@@ -15,11 +15,15 @@ It’s best to use a **Python virtual environment (venv)** to keep dependencies 
 ```bash
 # Create a virtual environment
 python -m venv venv
-bash
+```
+
+```bash
 Copy code
 # Activate it (on Mac/Linux)
 source venv/bin/activate
-bash
+```
+
+```bash
 Copy code
 # Or on Windows
 .\venv\Scripts\activate
@@ -27,7 +31,7 @@ Copy code
 ###**2️. Install Dependencies**
 All required libraries are listed in requirements.txt. Install them with:
 
-````bash
+```bash
 Copy code
 pip install -r requirements.txt
 ```

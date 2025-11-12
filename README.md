@@ -24,24 +24,29 @@ Copy code
 # Or on Windows
 .\venv\Scripts\activate
 ```
-2️. Install Dependencies
+###**2️. Install Dependencies**
 All required libraries are listed in requirements.txt. Install them with:
 
-bash
+````bash
 Copy code
 pip install -r requirements.txt
-3️. Download the spaCy Language Model
+```
+
+###**3️. Download the spaCy Language Model**
 The script relies on spaCy’s pre-trained English language model. Download it by running:
 
-bash
+```bash
 Copy code
 python -m spacy download en_core_web_sm
-4️. Run the Script
+```
+
+##**4️. Run the Script**
 Once everything is installed, just run the main file:
 
-bash
+```bash
 Copy code
 python resume_extractor.py
+```
 From there, the script will greet you and give you three choices:
 
 Upload a PDF resume — Enter the file path to your PDF.
@@ -51,7 +56,7 @@ Paste resume text — Paste your text directly into the terminal.
 
 Exit — Quit the program.
 
-🧩 Tech Stack
+##**Tech Stack**
 Python 3.8+
 
 PyPDF2 – For PDF text extraction
